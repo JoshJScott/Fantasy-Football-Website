@@ -1,3 +1,4 @@
+/*Fixes the space in the corners*/
 html {
     margin: 0;
     padding: 0;
@@ -44,17 +45,16 @@ nav {
     width: 100%;
     font-weight: bold;
     font-size: x-large;
-    text-decoration: none !important;
-    color: darkgrey !important;
+    text-decoration: none;
+    color: darkgrey;
     align-items: center;
     justify-content: center;
     display: flex;
 }
 /*what happens nav item text when hover*/
 .nav-link:hover {
-    text-decoration: none;
     transition: 0.7s;
-    color: black !important;
+    color: black;
 }
 
 /*box for the logo*/
@@ -70,13 +70,12 @@ nav {
 /*Actual Logotext*/
 .logotext {
     font-weight: bold;
-    text-decoration: none!important;
-    color: black !important;
+    text-decoration: none;
+    color: black;
     font-size: large;
 }
 /*Logotext hover*/
 .logotext:hover {
-    text-decoration: none;
-    color: orange !important;
+    color: orange;
     transition: 0.5s;
 }
