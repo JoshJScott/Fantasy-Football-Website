@@ -1,0 +1,89 @@
+/*Fixes the space in the corners*/
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+/* Here is all of the different nav bar items*/
+/*The whole box*/
+nav {
+    position: sticky;
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+}
+/*nav shadow*/
+.navshadow {
+    position: relative;
+    box-shadow: 0 3px whitesmoke;
+}
+/*The boxes of nav addresses*/
+.nav-item {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*Hovering over the nave link item*/
+.nav-item:hover {
+    transition: 0.7s;
+    background-color: whitesmoke;
+}
+/*The actual text of addresses*/
+.nav-link {
+    height: 100%;
+    width: 100%;
+    font-weight: bold;
+    font-size: x-large;
+    text-decoration: none;
+    color: darkgrey;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+/*what happens nav item text when hover*/
+.nav-link:hover {
+    transition: 0.7s;
+    color: black;
+}
+
+/*box for the logo*/
+.logobox {
+    display: flex;
+    flex: 0.25;
+    background-color:white;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+/*Actual Logotext*/
+.logotext {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+/*Logotext hover*/
+.logotext:hover {
+    color: orange;
+    transition: 0.5s;
+}
+/*
+body {
+    background-image: url("./images/aaronRodgers.gif");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+*/
