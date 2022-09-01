@@ -4,23 +4,193 @@ body {
     background-image: url("./images/aaronRodgers.gif");
     background-color: #cccccc;
     background-repeat: no-repeat;
-    background-size: 100% 200%;
+    background-size: 100% 100%;
 }
 
-/*Title Box*/
+/*Entire page besides nav bar*/
 .LandingPageBox {
-    height: 200%;
+    padding: 0;
+    margin: 0;
     width: 100%;
+    height: 90rem;
     display: flex;
+    flex-direction: column;
+    /*background-color: aqua;*/
+}
+/*top portion of landing page*/
+.topBox {
+    margin: 0;
+    padding: 0%;
+    width: 100%;
+    height: 55%;
+    display: flex;
+    align-items: center;
+    /*background-color: green;*/
+}
+
+.titlebox {
+    margin: 0;
+    padding: 0;
+    height: 90%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.WallofChampionsBox {
+    margin: 0;
+    padding: 0%;
+    display: flex;
+    width: 60%;
+    height: 90%;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.bottomBox {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 45%;
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+}
+
+.wallofChampheaderBox {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    height: 30%;
     align-items: center;
     justify-content: center;
 }
-/*Actual title lettering*/
-.titleBox {
-    height: 40rem;
+
+.wallofChampHeader {
+    transition: all 0.5s;
+    -webkit-text-stroke: 4px #d6f4f4;
+    font-variation-settings: "wght" 900, "ital" 1;
+    font-family: "Meta", sans-serif;
+    color: transparent;
+    text-align: center;
+    text-shadow: 10px 10px 0px #07bccc,
+    15px 15px 0px #e601c0,
+    20px 20px 0px #e9019a,
+    25px 25px 0px #f40468,
+    45px 45px 10px #482896;
     display: flex;
-    font-size: 175px;
-    color: darkgray;
-    text-shadow: 2px 2px lightgray;
+    height: 80%;
+    width: 80%;
+    justify-content: center;
     align-items: center;
+    font-size: 8rem;
+}
+
+.wallofChampboxes {
+    padding: 0;
+    display: flex;
+    margin: 0;
+    height: 15%;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+.wallofChampImage {
+    display: flex;
+    padding: 0;
+    margin: 3%;
+    width: 15%;
+    height: 100%;
+}
+
+.wallofChampImage:hover {
+    padding: 0;
+    margin: 0;
+    height: 190%;
+    width: 29%;
+    align-items: center;
+    justify-content: center;
+}
+.wallofChampText {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 70%;
+    height: 70%;
+    background-color: white;
+    border-radius: 25px;
+    font-size: x-large;
+}
+
+.image {
+    border-radius: 25px;
+    height: 100%;
+    width: 100%;
+}
+
+.wallofShameHeaderBox {
+    padding-top: 5%;
+    transition: all 0.5s;
+    -webkit-text-stroke: 4px #d6f4f4;
+    font-variation-settings: "wght" 900, "ital" 1;
+    font-family: "Meta", sans-serif;
+    color: transparent;
+    text-align: center;
+    text-shadow: 10px 10px 0px #07bccc,
+    15px 15px 0px #e601c0,
+    20px 20px 0px #e9019a,
+    25px 25px 0px #f40468,
+    45px 45px 10px #482896;
+    display: flex;
+    height: 30%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 7rem;
+}
+
+.galleryBox {
+    padding-top: 5%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 70%;
+}
+.gallery {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: rotate 35s linear infinite;
+}
+@keyframes rotate{
+    from{
+        transform:perspective(1200px)
+    rotateY(0deg);
+    }
+
+    to{
+        transform:perspective(1200px)
+    rotateY(360deg);
+    }
+}
+
+.gallery span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(380px);
+}
+
+.gallery span img { 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
